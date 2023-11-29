@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+:root {
+    --cardinal-red: #C01F3B;
+    --cardinal-red-darker: #8c1429;
+    --cardinal-black: #000000;
+    --cardinal-white: #FFFFFF;
+    --silver-accent: #c0c0c0;
+}
+
+body {
+    font-size: 16pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--silver-accent);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: var(--cardinal-red);
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+header {
+    background: radial-gradient(circle at center, var(--silver-accent), var(--cardinal-red), var(--cardinal-black));
+    width: 100vw;
+    color: var(--cardinal-black);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    margin: 0;
+    padding: 10px 0;
+}
+
+header p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--cardinal-white);
+    text-shadow: 2px 2px 5px var(--cardinal-black);
+}
+
+header h1 {
+    font-family: 'Mooli', sans-serif;
+    text-shadow: 2px 2px 5px var(--cardinal-black);
+    font-weight: bold;
+    color: var(--cardinal-white);
+}
+
+nav.navbar {
+    background-color: var(--cardinal-black);
+}
+
+nav.navbar a {
+    color: var(--cardinal-white);
+}
+
+nav.navbar a:hover {
+    color: var(--silver-accent);
+}
+
+button.btn {
+    background-color: var(--silver-accent);
+    color: var(--cardinal-white);
+}
+
+button.btn:hover {
+    background-color: var(--cardinal-red);
+}
+
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+.nav-bar-collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 5px 20px;
+}
+
+.nav-link,
+.dropdown-item {
+    font-size: 1.75rem;
+}
+
+#philosophyTitle {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--cardinal-red);
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+ol,
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* Add spacing between sections */
+section {
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+}
+
+.sectionTitle i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: var(--cardinal-red);
+}
+
+#philosophyLink {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.divider {
+    border-top: 2px solid var(--cardinal-red);
+    margin: 20px 0;
+}
+
+.skillsTitle {
+    text-align: center;
+}
+
+.splash-container {
+    display: none;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#splash-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.splash-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--cardinal-white);
+}
+
+.splash-header {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px var(--cardinal-black);
+}
+
+.splash-tagline {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.splash-btn {
+    font-size: 1.75rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: var(--cardinal-red);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.splash-btn:hover {
+    background-color: var(--cardinal-white);
+    color: var(--cardinal-black);
+}
+
+/* Ensure the main content is not visible when the splash page is displayed */
+#main-content {
+    display: none;
+}
+
+#philosophyPage {
+    color: #333;
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#philosophyPage h2,
+#philosophyPage p {
+    color: #333;
+}
+
+#scheduling-tool {
+    height: 100vh;
+    width: 90%;
+    overflow: auto;
+}
+
+#pricing {
+    padding: 60px 0;
+}
+
+#pricing .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--cardinal-black);
+}
+
+#pricing .pricing-card {
+    background-color: var(--cardinal-white);
+    border: 1px solid var(--silver-accent);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#pricing .pricing-card.highlighted {
+    border-color: var(--cardinal-red);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pricing .pricing-card h3 {
+    color: var(--cardinal-red);
+    margin-bottom: 15px;
+}
+
+#pricing .price {
+    font-size: 24px;
+    color: var(--cardinal-black);
+    margin-bottom: 20px;
+}
+
+#pricing .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#pricing .feature li {
+    margin-bottom: 10px;
+}
+
+#pricing .btn-cta {
+    background-color: var(--cardinal-red);
+    color: var(--cardinal-white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#pricing .btn-cta:hover {
+    background-color: var(--cardinal-red-darker);
+    color: var(--cardinal-white);
+}
+
+#blog .blog-post {
+    background-color: var(--cardinal-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--cardinal-red);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+#blog .blog-post-tags {
+    margin-top: 1em;
+}
+
+#blog .tag {
+    display: inline-block;
+    background-color: var(--cardinal-red);
+    color: var(--cardinal-white);
+    padding: 0.3em 0.6em;
+    margin-right: 0.5em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+#bowling .tag:hover {
+    background-color: var(--cardinal-red-darker);
+}
+
+#blog .blog-post h2, h5 {
+    text-align: center;
+}
+
+#blog .blog-post-metadata {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--cardinal-black);
+    color: var(--cardinal-white);
+    padding: 20px 0;
+}
+
+footer a {
+    color: var(--silver-accent);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cardinal-red);
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h5 {
+    color: var(--cardinal-red);
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: var(--cardinal-white);
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        text-align: center;
+    }
+
+    #blog .blog-post-tags {
+        text-align: center;
+    }
+
+    #blog .tag {
+        margin-top: 0.5em;
+    }
+}
